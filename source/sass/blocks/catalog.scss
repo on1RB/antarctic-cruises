@@ -77,11 +77,11 @@
 
   &--astoria,
   &--elain {
-    background-image: url("/img/astoria.jpg");
+    background-image: url("../img/astoria.jpg");
     background-position: 46% 50%;
 
     @include retina {
-      background-image: url("/img/astoria@2x.jpg");
+      background-image: url("../img/astoria@2x.jpg");
     }
 
     @include vp-767 {
@@ -90,37 +90,37 @@
   }
 
   &--atlantis {
-    background-image: url("/img/atlantis.jpg");
+    background-image: url("../img/atlantis.jpg");
     background-position: 50% 50%;
 
     @include retina {
-      background-image: url("/img/atlantis@2x.jpg");
+      background-image: url("../img/atlantis@2x.jpg");
     }
   }
 
   &--odysseus {
-    background-image: url("/img/odysseus.jpg");
+    background-image: url("../img/odysseus.jpg");
     background-position: 46% 50%;
 
     @include retina {
-      background-image: url("/img/odysseus@2x.jpg");
+      background-image: url("../img/odysseus@2x.jpg");
     }
   }
 
   &--olimpia {
-    background-image: url("/img/olimpia.jpg");
+    background-image: url("../img/olimpia.jpg");
 
     @include retina {
-      background-image: url("/img/olimpia@2x.jpg");
+      background-image: url("../img/olimpia@2x.jpg");
     }
   }
 
   &--avrora {
-    background-image: url("/img/avrora.jpg");
+    background-image: url("../img/avrora.jpg");
     background-position: 9% 50%;
 
     @include retina {
-      background-image: url("/img/avrora@2x.jpg");
+      background-image: url("../img/avrora@2x.jpg");
     }
 
     @include vp-767 {
@@ -129,20 +129,20 @@
   }
 
   &--leonor {
-    background-image: url("/img/leonor.jpg");
+    background-image: url("../img/leonor.jpg");
     background-position: 47% 50%;
 
     @include retina {
-      background-image: url("/img/leonor@2x.jpg");
+      background-image: url("../img/leonor@2x.jpg");
     }
   }
 
   &--minion1 {
-    background-image: url("/img/minion-1.jpg");
+    background-image: url("../img/minion-1.jpg");
     background-position: 53% 50%;
 
     @include retina {
-      background-image: url("/img/minion-1@2x.jpg");
+      background-image: url("../img/minion-1@2x.jpg");
     }
   }
 }

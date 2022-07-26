@@ -1060,7 +1060,7 @@ button,
 }
 
 .advantages {
-  background-image: url("/img/advantages-desktop-bg.png");
+  background-image: url("../img/advantages-desktop-bg.png");
   background-color: #dae7f5;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1204,36 +1204,36 @@ button,
 
 .catalog__item--astoria,
 .catalog__item--elain {
-  background-image: url("/img/astoria.jpg");
+  background-image: url("../img/astoria.jpg");
   background-position: 46% 50%;
 }
 
 .catalog__item--atlantis {
-  background-image: url("/img/atlantis.jpg");
+  background-image: url("../img/atlantis.jpg");
   background-position: 50% 50%;
 }
 
 .catalog__item--odysseus {
-  background-image: url("/img/odysseus.jpg");
+  background-image: url("../img/odysseus.jpg");
   background-position: 46% 50%;
 }
 
 .catalog__item--olimpia {
-  background-image: url("/img/olimpia.jpg");
+  background-image: url("../img/olimpia.jpg");
 }
 
 .catalog__item--avrora {
-  background-image: url("/img/avrora.jpg");
+  background-image: url("../img/avrora.jpg");
   background-position: 9% 50%;
 }
 
 .catalog__item--leonor {
-  background-image: url("/img/leonor.jpg");
+  background-image: url("../img/leonor.jpg");
   background-position: 47% 50%;
 }
 
 .catalog__item--minion1 {
-  background-image: url("/img/minion-1.jpg");
+  background-image: url("../img/minion-1.jpg");
   background-position: 53% 50%;
 }
 
@@ -1314,7 +1314,7 @@ button,
 
 .booking {
   padding: 50px 163px;
-  background-image: url("/img/reservation-desktop-bg.png");
+  background-image: url("../img/reservation-desktop-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #daf1fd;
@@ -1571,11 +1571,11 @@ button,
   }
 
   .advantages {
-    background-image: url("/img/advantages-desktop-bg@2x.png");
+    background-image: url("../img/advantages-desktop-bg@2x.png");
   }
 
   .booking {
-    background-image: url("/img/reservation-desktop-bg@2x.png");
+    background-image: url("../img/reservation-desktop-bg@2x.png");
   }
 }
 
@@ -1736,7 +1736,7 @@ button,
     padding-left: 45px;
     padding-right: 45px;
     padding-bottom: 100px;
-    background-image: url("/img/advantages-tablet-bg.png");
+    background-image: url("../img/advantages-tablet-bg.png");
   }
 
   .advantages__title {
@@ -1851,7 +1851,7 @@ button,
     display: block;
     padding: 100px;
     padding-top: 88px;
-    background-image: url("/img/reservation-tablet-bg.png");
+    background-image: url("../img/reservation-tablet-bg.png");
   }
 
   .booking__container {
@@ -1929,11 +1929,11 @@ button,
   }
 
   .advantages {
-    background-image: url("/img/advantages-tablet-bg@2x.png");
+    background-image: url("../img/advantages-tablet-bg@2x.png");
   }
 
   .booking {
-    background-image: url("/img/reservation-tablet-bg@2x.png");
+    background-image: url("../img/reservation-tablet-bg@2x.png");
   }
 }
 
@@ -2181,7 +2181,7 @@ button,
     padding-left: 15px;
     padding-right: 15px;
     padding-bottom: 65px;
-    background-image: url("/img/advantages-mobile-bg.png");
+    background-image: url("../img/advantages-mobile-bg.png");
   }
 
   .advantages__title {
@@ -2299,7 +2299,7 @@ button,
   .booking {
     padding: 65px 15px;
     padding-top: 59px;
-    background-image: url("/img/reservation-mobile-bg.png");
+    background-image: url("../img/reservation-mobile-bg.png");
   }
 
   .booking__inner {
@@ -2412,41 +2412,41 @@ button,
   }
 
   .advantages {
-    background-image: url("/img/advantages-mobile-bg@2x.png");
+    background-image: url("../img/advantages-mobile-bg@2x.png");
   }
 
   .booking {
-    background-image: url("/img/reservation-mobile-bg@2x.png");
+    background-image: url("../img/reservation-mobile-bg@2x.png");
   }
 }
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 2dppx) {
   .catalog__item--astoria,
   .catalog__item--elain {
-    background-image: url("/img/astoria@2x.jpg");
+    background-image: url("../img/astoria@2x.jpg");
   }
 
   .catalog__item--atlantis {
-    background-image: url("/img/atlantis@2x.jpg");
+    background-image: url("../img/atlantis@2x.jpg");
   }
 
   .catalog__item--odysseus {
-    background-image: url("/img/odysseus@2x.jpg");
+    background-image: url("../img/odysseus@2x.jpg");
   }
 
   .catalog__item--olimpia {
-    background-image: url("/img/olimpia@2x.jpg");
+    background-image: url("../img/olimpia@2x.jpg");
   }
 
   .catalog__item--avrora {
-    background-image: url("/img/avrora@2x.jpg");
+    background-image: url("../img/avrora@2x.jpg");
   }
 
   .catalog__item--leonor {
-    background-image: url("/img/leonor@2x.jpg");
+    background-image: url("../img/leonor@2x.jpg");
   }
 
   .catalog__item--minion1 {
-    background-image: url("/img/minion-1@2x.jpg");
+    background-image: url("../img/minion-1@2x.jpg");
   }
 }
