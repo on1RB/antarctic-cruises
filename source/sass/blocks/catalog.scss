@@ -1,0 +1,164 @@
+.catalog {
+  padding: 110px 118px;
+  padding-bottom: 120px;
+  background-color: $color-alice-blue;
+
+  @include vp-1366 {
+    padding: 90px 60px;
+    padding-bottom: 100px;
+  }
+
+  @include vp-767 {
+    padding: 57px 25px;
+    padding-bottom: 65px;
+  }
+}
+
+.catalog__title {
+  font-size: 28px;
+  line-height: 42px;
+  font-weight: 600;
+  color: $color-tangaroa;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 49px;
+
+  @include vp-1366 {
+    font-size: 26px;
+    line-height: 39px;
+  }
+
+  @include vp-767 {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 30px;
+  }
+}
+
+.catalog__list {
+  list-style-type: none;
+  width: 1130px;
+  margin: 0 auto;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 260px 260px 260px 260px;
+  grid-template-rows: 386px 386px;
+  gap: 30px;
+
+  @include vp-1366 {
+    width: 648px;
+    grid-template-columns: 309px 309px;
+    grid-template-rows: 386px 386px 386px 386px;
+  }
+
+  @include vp-767 {
+    width: 270px;
+    grid-template-columns: 270px;
+    grid-template-rows: 386px 386px 386px 386px 386px 386px 386px 386px;
+  }
+}
+
+.catalog__item {
+  position: relative;
+  padding: 30px;
+  padding-top: 337px;
+  background: linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, $color-tangaroa 100%);
+  background-size: cover;
+
+  @include vp-1366 {
+    padding: 35px;
+    padding-top: 332px;
+  }
+
+  @include vp-767 {
+    padding: 25px;
+    padding-top: 342px;
+  }
+
+  &--astoria,
+  &--elain {
+    background-image: url("/img/astoria.jpg");
+    background-position: 46% 50%;
+
+    @include retina {
+      background-image: url("/img/astoria@2x.jpg");
+    }
+
+    @include vp-767 {
+      background-position: 50% 50%;
+    }
+  }
+
+  &--atlantis {
+    background-image: url("/img/atlantis.jpg");
+    background-position: 50% 50%;
+
+    @include retina {
+      background-image: url("/img/atlantis@2x.jpg");
+    }
+  }
+
+  &--odysseus {
+    background-image: url("/img/odysseus.jpg");
+    background-position: 46% 50%;
+
+    @include retina {
+      background-image: url("/img/odysseus@2x.jpg");
+    }
+  }
+
+  &--olimpia {
+    background-image: url("/img/olimpia.jpg");
+
+    @include retina {
+      background-image: url("/img/olimpia@2x.jpg");
+    }
+  }
+
+  &--avrora {
+    background-image: url("/img/avrora.jpg");
+    background-position: 9% 50%;
+
+    @include retina {
+      background-image: url("/img/avrora@2x.jpg");
+    }
+
+    @include vp-767 {
+      background-position: 50% 50%;
+    }
+  }
+
+  &--leonor {
+    background-image: url("/img/leonor.jpg");
+    background-position: 47% 50%;
+
+    @include retina {
+      background-image: url("/img/leonor@2x.jpg");
+    }
+  }
+
+  &--minion1 {
+    background-image: url("/img/minion-1.jpg");
+    background-position: 53% 50%;
+
+    @include retina {
+      background-image: url("/img/minion-1@2x.jpg");
+    }
+  }
+}
+
+.catalog__info {
+  display: none;
+}
+
+.catalog__item:hover .catalog__info {
+  display: block;
+}
+
+.catalog__subtitle {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 500;
+  color: $color-alice-blue;
+  margin: 0;
+}

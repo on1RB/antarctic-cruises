@@ -1,0 +1,131 @@
+.form {
+  padding: 50px;
+  padding-top: 44px;
+  background-color: $color-tangaroa;
+  box-shadow: 0 4px 45px rgba(1, 28, 64, 0.15);
+
+  @include vp-767 {
+    padding: 40px 30px;
+    padding-top: 35px;
+  }
+}
+
+.form__title {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 500;
+  color: $color-alice-blue;
+  margin: 0;
+  margin-bottom: 27px;
+
+  @include vp-767 {
+    line-height: 25px;
+    margin-bottom: 28px;
+    text-align: center;
+    padding: 0 8px;
+  }
+}
+
+.form__indent {
+  display: none;
+
+  @include vp-767 {
+    display: block;
+  }
+}
+
+.form__label {
+  position: relative;
+  display: block;
+  margin-bottom: 20px;
+
+  &--email {
+    margin-bottom: 16px;
+  }
+
+  &--processing {
+    margin-bottom: 32px;
+    cursor: pointer;
+
+    @include vp-767 {
+      margin-bottom: 27px;
+    }
+  }
+}
+
+.form__field {
+  min-width: 303px;
+  border: none;
+  padding: 11px 16px;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 21px;
+  color: rgba(1, 28, 64, 0.7);
+  outline: none;
+
+  @include vp-767 {
+    min-width: 230px;
+  }
+}
+
+.form__field[type="checkbox"]:checked + .form__mark::before {
+  background-image: url("/img/svg/form-check.svg");
+  background-repeat: no-repeat;
+}
+
+.form__mark {
+  position: absolute;
+  width: 18px;
+  top: 4px;
+  left: 0;
+  height: 18px;
+  background-color: $color-alice-blue;
+
+  @include vp-767 {
+    width: 20px;
+    height: 20px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 3px;
+    width: 11px;
+    height: 9px;
+
+    @include vp-767 {
+      top: 6px;
+      left: 4px;
+    }
+  }
+}
+
+.form__text {
+  display: block;
+  font-size: 10px;
+  line-height: 13px;
+  color: $color-alice-blue;
+  padding-left: 23px;
+  padding-top: 7px;
+
+  @include vp-767 {
+    line-height: 12px;
+    padding-left: 28px;
+    padding-top: 3px;
+  }
+}
+
+.form_btn {
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 600;
+  color: $color-tangaroa;
+  background-color: $color-alice-blue;
+  outline: none;
+  border: none;
+  width: 100%;
+  padding: 11px;
+  cursor: pointer;
+}
