@@ -1,4 +1,4 @@
-.form {
+form {
   padding: 50px;
   padding-top: 44px;
   background-color: $color-tangaroa;
@@ -10,7 +10,7 @@
   }
 }
 
-.form__title {
+form h3 {
   font-size: 18px;
   line-height: 27px;
   font-weight: 500;
@@ -26,7 +26,7 @@
   }
 }
 
-.form__indent {
+form br {
   display: none;
 
   @include vp-767 {
@@ -34,16 +34,16 @@
   }
 }
 
-.form__label {
+form label {
   position: relative;
   display: block;
   margin-bottom: 20px;
 
-  &--email {
+  &:nth-child(4) {
     margin-bottom: 16px;
   }
 
-  &--processing {
+  &:nth-child(5) {
     margin-bottom: 32px;
     cursor: pointer;
 
@@ -53,7 +53,7 @@
   }
 }
 
-.form__field {
+form input {
   min-width: 303px;
   border: none;
   padding: 11px 16px;
@@ -68,12 +68,12 @@
   }
 }
 
-.form__field[type="checkbox"]:checked + .form__mark::before {
+input[type="checkbox"]:checked + span::before {
   background-image: url("/img/svg/form-check.svg");
   background-repeat: no-repeat;
 }
 
-.form__mark {
+form span {
   position: absolute;
   width: 18px;
   top: 4px;
@@ -101,13 +101,14 @@
   }
 }
 
-.form__text {
+form p {
   display: block;
   font-size: 10px;
   line-height: 13px;
   color: $color-alice-blue;
   padding-left: 23px;
   padding-top: 7px;
+  margin: 0;
 
   @include vp-767 {
     line-height: 12px;
@@ -116,7 +117,7 @@
   }
 }
 
-.form_btn {
+form button {
   font-family: inherit;
   font-size: 14px;
   line-height: 21px;

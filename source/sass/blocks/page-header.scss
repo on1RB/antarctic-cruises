@@ -1,5 +1,6 @@
 .page-header {
   background-image: url("../img/header-desktop-bg.png");
+  background-color: #245e99;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
@@ -139,7 +140,7 @@
   }
 }
 
-.page-header__title {
+.page-header h1 {
   font-size: 54px;
   line-height: 66px;
   font-weight: 700;
@@ -175,7 +176,7 @@
   }
 }
 
-.page-header__description {
+.page-header p {
   font-size: 20px;
   line-height: 24px;
   color: $color-alice-blue;
@@ -193,9 +194,5 @@
   @include vp-767 {
     font-size: 16px;
     line-height: 22px;
-
-    &--notvisible {
-      font-size: 0;
-    }
   }
 }

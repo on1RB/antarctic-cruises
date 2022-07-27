@@ -389,7 +389,7 @@ template {
   font-weight: 400;
   font-family: "Montserrat";
   font-display: swap;
-  src: url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff");
+  src: url("../fonts/montserrat-regular.woff2") format("woff2"), url("../fonts/montserrat-regular.woff") format("woff");
 }
 
 @font-face {
@@ -397,7 +397,7 @@ template {
   font-weight: 500;
   font-family: "Montserrat";
   font-display: swap;
-  src: url("../fonts/Montserrat-Medium.woff2") format("woff2"), url("../fonts/Montserrat-Medium.woff") format("woff");
+  src: url("../fonts/montserrat-medium.woff2") format("woff2"), url("../fonts/montserrat-medium.woff") format("woff");
 }
 
 @font-face {
@@ -405,7 +405,7 @@ template {
   font-weight: 600;
   font-family: "Montserrat";
   font-display: swap;
-  src: url("../fonts/Montserrat-SemiBold.woff2") format("woff2"), url("../fonts/Montserrat-SemiBold.woff") format("woff");
+  src: url("../fonts/montserrat-semibold.woff2") format("woff2"), url("../fonts/montserrat-semibold.woff") format("woff");
 }
 
 @font-face {
@@ -413,7 +413,7 @@ template {
   font-weight: 700;
   font-family: "Montserrat";
   font-display: swap;
-  src: url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff");
+  src: url("../fonts/montserrat-bold.woff2") format("woff2"), url("../fonts/montserrat-bold.woff") format("woff");
 }
 
 *,
@@ -459,105 +459,6 @@ video {
   display: block;
   max-width: 100%;
   height: auto;
-}
-
-textarea {
-  resize: none;
-}
-
-input:-webkit-autofill {
-  -webkit-box-shadow: inset 0 0 0 1000px #ffffff;
-  box-shadow: inset 0 0 0 1000px #ffffff;
-  -webkit-text-fill-color: #000000;
-}
-
-input,
-textarea {
-  border-radius: 0;
-}
-
-input::-webkit-input-placeholder,
-textarea::-webkit-input-placeholder {
-  opacity: 1;
-}
-
-input::-moz-placeholder,
-textarea::-moz-placeholder {
-  opacity: 1;
-}
-
-input:-ms-input-placeholder,
-textarea:-ms-input-placeholder {
-  opacity: 1;
-}
-
-input::-ms-input-placeholder,
-textarea::-ms-input-placeholder {
-  opacity: 1;
-}
-
-input::placeholder,
-textarea::placeholder {
-  opacity: 1;
-}
-
-input:invalid,
-textarea:invalid {
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-
-select {
-  border-radius: 0;
-}
-
-input::-ms-clear,
-input::-ms-reveal {
-  display: none;
-}
-
-input[type="search"]::-webkit-search-decoration,
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-results-button,
-input[type="search"]::-webkit-search-results-decoration {
-  -webkit-appearance: none;
-  appearance: none;
-}
-
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  margin: 0;
-  -webkit-appearance: none;
-  appearance: none;
-}
-
-input[type="number"] {
-  -webkit-appearance: textfield;
-  -moz-appearance: textfield;
-  appearance: textfield;
-}
-
-select,
-textarea,
-input:matches([type="email"],
-[type="number"],
-[type="password"],
-[type="search"],
-[type="tel"],
-[type="text"],
-[type="url"]) {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
-
-button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
 }
 
 .wrapper {
@@ -783,6 +684,7 @@ button,
 
 .page-header {
   background-image: url("../img/header-desktop-bg.png");
+  background-color: #245e99;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
@@ -836,7 +738,7 @@ button,
   padding-bottom: 286px;
 }
 
-.page-header__title {
+.page-header h1 {
   font-size: 54px;
   line-height: 66px;
   font-weight: 700;
@@ -851,7 +753,7 @@ button,
   display: none;
 }
 
-.page-header__description {
+.page-header p {
   font-size: 20px;
   line-height: 24px;
   color: #f9fbfd;
@@ -1031,7 +933,7 @@ button,
   padding-top: 56px;
 }
 
-.journey__title {
+.journey h2 {
   font-size: 28px;
   line-height: 42px;
   font-weight: 600;
@@ -1048,7 +950,7 @@ button,
   display: none;
 }
 
-.journey__description {
+.journey p {
   line-height: 24px;
   font-weight: 400;
   color: #011c40;
@@ -1070,7 +972,7 @@ button,
   padding-bottom: 120px;
 }
 
-.advantages__title {
+.advantages h2 {
   font-size: 28px;
   line-height: 42px;
   font-weight: 600;
@@ -1122,7 +1024,7 @@ button,
   margin-bottom: 28px;
 }
 
-.advantages__subtitle {
+.advantages h3 {
   font-size: 18px;
   line-height: 27px;
   font-weight: 500;
@@ -1151,7 +1053,7 @@ button,
   display: none;
 }
 
-.advantages__description {
+.advantages p {
   font-size: 14px;
   line-height: 20px;
   color: #011c40;
@@ -1345,7 +1247,7 @@ button,
   padding-top: 163px;
 }
 
-.booking__title {
+.booking h2 {
   font-size: 40px;
   line-height: 60px;
   font-weight: 700;
@@ -1354,7 +1256,7 @@ button,
   margin-bottom: 8px;
 }
 
-.booking__description {
+.booking p {
   font-size: 18px;
   line-height: 27px;
   color: #011c40;
@@ -1370,7 +1272,7 @@ button,
   display: block;
 }
 
-.form {
+form {
   padding: 50px;
   padding-top: 44px;
   background-color: #011c40;
@@ -1378,7 +1280,7 @@ button,
   box-shadow: 0 4px 45px rgba(1, 28, 64, 0.15);
 }
 
-.form__title {
+form h3 {
   font-size: 18px;
   line-height: 27px;
   font-weight: 500;
@@ -1387,26 +1289,26 @@ button,
   margin-bottom: 27px;
 }
 
-.form__indent {
+form br {
   display: none;
 }
 
-.form__label {
+form label {
   position: relative;
   display: block;
   margin-bottom: 20px;
 }
 
-.form__label--email {
+form label:nth-child(4) {
   margin-bottom: 16px;
 }
 
-.form__label--processing {
+form label:nth-child(5) {
   margin-bottom: 32px;
   cursor: pointer;
 }
 
-.form__field {
+form input {
   min-width: 303px;
   border: none;
   padding: 11px 16px;
@@ -1417,12 +1319,12 @@ button,
   outline: none;
 }
 
-.form__field[type="checkbox"]:checked + .form__mark::before {
+input[type="checkbox"]:checked + span::before {
   background-image: url("/img/svg/form-check.svg");
   background-repeat: no-repeat;
 }
 
-.form__mark {
+form span {
   position: absolute;
   width: 18px;
   top: 4px;
@@ -1431,7 +1333,7 @@ button,
   background-color: #f9fbfd;
 }
 
-.form__mark::before {
+form span::before {
   content: "";
   position: absolute;
   top: 5px;
@@ -1440,16 +1342,17 @@ button,
   height: 9px;
 }
 
-.form__text {
+form p {
   display: block;
   font-size: 10px;
   line-height: 13px;
   color: #f9fbfd;
   padding-left: 23px;
   padding-top: 7px;
+  margin: 0;
 }
 
-.form_btn {
+form button {
   font-family: inherit;
   font-size: 14px;
   line-height: 21px;
@@ -1502,7 +1405,7 @@ button,
   display: none;
 }
 
-.contacts__text {
+.contacts p {
   font-size: 18px;
   line-height: 27px;
   font-weight: 500;
@@ -1615,14 +1518,14 @@ button,
     padding-bottom: 275px;
   }
 
-  .page-header__title {
+  .page-header h1 {
     padding: 0;
     font-size: 50px;
     line-height: 61px;
     text-shadow: none;
   }
 
-  .page-header__description {
+  .page-header p {
     padding: 0;
     font-size: 18px;
     line-height: 22px;
@@ -1716,7 +1619,7 @@ button,
     padding-top: 0;
   }
 
-  .journey__title {
+  .journey h2 {
     font-size: 26px;
     line-height: 36px;
     margin-bottom: 16px;
@@ -1739,7 +1642,7 @@ button,
     background-image: url("../img/advantages-tablet-bg.png");
   }
 
-  .advantages__title {
+  .advantages h2 {
     font-size: 26px;
     line-height: 39px;
   }
@@ -1869,14 +1772,14 @@ button,
     margin: 0 auto;
   }
 
-  .booking__title {
+  .booking h2 {
     font-size: 34px;
     line-height: 51px;
     text-align: center;
     margin-bottom: 5px;
   }
 
-  .booking__description {
+  .booking p {
     font-size: 18px;
     line-height: 27px;
     text-align: center;
@@ -1910,7 +1813,7 @@ button,
     display: block;
   }
 
-  .contacts__text {
+  .contacts p {
     margin-bottom: 27px;
   }
 
@@ -2014,13 +1917,13 @@ button,
     padding-bottom: 179px;
   }
 
-  .page-header__title {
+  .page-header h1 {
     font-size: 36px;
     line-height: 45px;
     margin-bottom: 11px;
   }
 
-  .page-header__title--notvisible {
+  .page-header h1--notvisible {
     font-size: 0;
   }
 
@@ -2028,13 +1931,9 @@ button,
     display: block;
   }
 
-  .page-header__description {
+  .page-header p {
     font-size: 16px;
     line-height: 22px;
-  }
-
-  .page-header__description--notvisible {
-    font-size: 0;
   }
 
   .main-nav {
@@ -2158,7 +2057,7 @@ button,
     padding-bottom: 65px;
   }
 
-  .journey__title {
+  .journey h2 {
     font-size: 24px;
     line-height: 34px;
     margin-bottom: 15px;
@@ -2184,7 +2083,7 @@ button,
     background-image: url("../img/advantages-mobile-bg.png");
   }
 
-  .advantages__title {
+  .advantages h2 {
     font-size: 24px;
     line-height: 36px;
     margin-bottom: 30px;
@@ -2310,13 +2209,13 @@ button,
     width: 290px;
   }
 
-  .booking__title {
+  .booking h2 {
     font-size: 24px;
     line-height: 31px;
     margin-bottom: 14px;
   }
 
-  .booking__description {
+  .booking p {
     font-size: 16px;
     line-height: 22px;
   }
@@ -2329,41 +2228,41 @@ button,
     display: none;
   }
 
-  .form {
+  form {
     padding: 40px 30px;
     padding-top: 35px;
   }
 
-  .form__title {
+  form h3 {
     line-height: 25px;
     margin-bottom: 28px;
     text-align: center;
     padding: 0 8px;
   }
 
-  .form__indent {
+  form br {
     display: block;
   }
 
-  .form__label--processing {
+  form label:nth-child(5) {
     margin-bottom: 27px;
   }
 
-  .form__field {
+  form input {
     min-width: 230px;
   }
 
-  .form__mark {
+  form span {
     width: 20px;
     height: 20px;
   }
 
-  .form__mark::before {
+  form span::before {
     top: 6px;
     left: 4px;
   }
 
-  .form__text {
+  form p {
     line-height: 12px;
     padding-left: 28px;
     padding-top: 3px;
@@ -2401,7 +2300,7 @@ button,
     display: none;
   }
 
-  .contacts__text {
+  .contacts p {
     padding-right: 5px;
   }
 }

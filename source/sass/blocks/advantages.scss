@@ -39,7 +39,7 @@
   }
 }
 
-.advantages__title {
+.advantages h2 {
   font-size: 28px;
   line-height: 42px;
   font-weight: 600;
@@ -146,14 +146,16 @@
   }
 }
 
-.advantages__subtitle {
+.advantages h3 {
   font-size: 18px;
   line-height: 27px;
   font-weight: 500;
   color: $color-tangaroa;
   margin: 0;
   margin-bottom: 8px;
+}
 
+.advantages__subtitle {
   @include vp-1366 {
     line-height: 25px;
     margin-bottom: 9px;
@@ -240,12 +242,14 @@
   }
 }
 
-.advantages__description {
+.advantages p {
   font-size: 14px;
   line-height: 20px;
   color: $color-tangaroa;
   margin: 0;
+}
 
+.advantages__description {
   &--boat {
     padding-right: 59px;
   }
