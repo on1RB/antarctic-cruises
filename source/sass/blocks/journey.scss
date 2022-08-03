@@ -1,11 +1,14 @@
 .journey {
   display: grid;
-  grid-template-columns: 512px 560px;
-  padding: 120px 103px;
+  grid-template-columns: repeat(2, 1fr);
+  padding-left: 103px;
+  padding-right: 103px;
+  padding-bottom: 120px;
   padding-top: 112px;
-  column-gap: 88px;
+  column-gap: 40px;
+  row-gap: 40px;
 
-  @include vp-1366 {
+  @include vp-1023 {
     grid-template-columns: 324px 324px;
     column-gap: 30px;
     padding-top: 91px;
@@ -30,7 +33,7 @@
   flex-wrap: wrap;
   padding-top: 56px;
 
-  @include vp-1366 {
+  @include vp-1023 {
     padding-top: 0;
   }
 }
@@ -43,7 +46,7 @@
   margin-bottom: 24px;
   color: $color-tangaroa;
 
-  @include vp-1366 {
+  @include vp-1023 {
     font-size: 26px;
     line-height: 36px;
     margin-bottom: 16px;
@@ -63,7 +66,7 @@
     display: none;
   }
 
-  @include vp-1366 {
+  @include vp-1023 {
     display: block;
   }
 
@@ -86,7 +89,7 @@
 .journey__picture {
   height: 301px;
 
-  @include vp-1366 {
+  @include vp-1023 {
     margin-top: 9px;
     height: 264px;
   }

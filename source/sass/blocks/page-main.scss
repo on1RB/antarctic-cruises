@@ -3,10 +3,10 @@
 }
 
 .page-main__wrapper {
-  width: 1366px;
+  width: auto;
   margin: 0 auto;
 
-  @include vp-1366 {
+  @include vp-1023 {
     width: 768px;
   }
 

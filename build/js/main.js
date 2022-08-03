@@ -13,21 +13,26 @@ window.addEventListener('DOMContentLoaded', () => {
   const navMain = document.querySelector('.main-nav');
   const navToggle = document.querySelector('.page-header__toggle');
   const navLogo = document.querySelector('.page-header__logo');
-  const headerTitle = document.querySelector('.page-header__title');
-  const headerDesc = document.querySelector('.page-header__description');
+  const pageBody = document.querySelector('.page-body');
+  const navLink = document.querySelectorAll('.main-nav__link');
+  const navLinkList = Array.prototype.slice.call(navLink);
+  const navOverley = document.querySelector('.main-nav__bg');
 
   navMain.classList.remove('main-nav--nojs');
+  navMain.classList.add('main-nav--closed');
+  navToggle.classList.remove('page-header__toggle--closed');
+  navToggle.classList.add('page-header__toggle--opened');
 
   navToggle.addEventListener('click', () => {
     if (navToggle.classList.contains('page-header__toggle--closed')) {
       navToggle.classList.remove('page-header__toggle--closed');
       navToggle.classList.add('page-header__toggle--opened');
       navLogo.classList.remove('page-header__logo--active');
+      pageBody.classList.remove('scroll-lock-ios');
     } else {
       navToggle.classList.add('page-header__toggle--closed');
       navToggle.classList.remove('page-header__toggle--opened');
-      headerTitle.classList.add('page-header__title--notvisible');
-      headerDesc.classList.add('page-header__description--notvisible');
+      pageBody.classList.add('scroll-lock-ios');
     }
     if (navMain.classList.contains('main-nav--closed')) {
       navMain.classList.remove('main-nav--closed');
@@ -36,8 +41,30 @@ window.addEventListener('DOMContentLoaded', () => {
     } else {
       navMain.classList.add('main-nav--closed');
       navMain.classList.remove('main-nav--opened');
-      headerTitle.classList.remove('page-header__title--notvisible');
-      headerDesc.classList.remove('page-header__description--notvisible');
+    }
+  });
+
+  navLinkList.forEach((element) => {
+    element.addEventListener('click', () => {
+      if (navMain.classList.contains('main-nav--opened')) {
+        navMain.classList.remove('main-nav--opened');
+        navMain.classList.add('main-nav--closed');
+        navToggle.classList.remove('page-header__toggle--closed');
+        navToggle.classList.add('page-header__toggle--opened');
+        pageBody.classList.remove('scroll-lock-ios');
+        navLogo.classList.remove('page-header__logo--active');
+      }
+    });
+  });
+
+  navOverley.addEventListener('click', () => {
+    if (navMain.classList.contains('main-nav--opened')) {
+      navMain.classList.remove('main-nav--opened');
+      navMain.classList.add('main-nav--closed');
+      navToggle.classList.remove('page-header__toggle--closed');
+      navToggle.classList.add('page-header__toggle--opened');
+      pageBody.classList.remove('scroll-lock-ios');
+      navLogo.classList.remove('page-header__logo--active');
     }
   });
 

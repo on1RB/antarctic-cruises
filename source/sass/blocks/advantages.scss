@@ -8,13 +8,13 @@
   padding-right: 103px;
   padding-bottom: 120px;
 
-  @media (min-width: 1366px) {
+  @media (min-width: 1024px) {
     @include retina {
       background-image: url("../img/advantages-desktop-bg@2x.png");
     }
   }
 
-  @include vp-1366 {
+  @include vp-1023 {
     padding-top: 90px;
     padding-left: 45px;
     padding-right: 45px;
@@ -48,7 +48,7 @@
   margin-bottom: 49px;
   color: $color-tangaroa;
 
-  @include vp-1366 {
+  @include vp-1023 {
     font-size: 26px;
     line-height: 39px;
   }
@@ -61,10 +61,10 @@
 }
 
 .advantages__wrapper {
-  width: 1160px;
+  width: auto;
   margin: 0 auto;
 
-  @include vp-1366 {
+  @include vp-1023 {
     width: 678px;
   }
 
@@ -78,10 +78,10 @@
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: 360px 360px 360px;
+  grid-template-columns: repeat(3, 1fr);
   column-gap: 40px;
 
-  @include vp-1366 {
+  @include vp-1023 {
     grid-template-columns: 206px 206px 206px;
     column-gap: 30px;
   }
@@ -97,7 +97,7 @@
   padding: 30px;
   padding-bottom: 25px;
 
-  @include vp-1366 {
+  @include vp-1023 {
     padding: 20px;
     padding-right: 16px;
   }
@@ -113,7 +113,7 @@
   &--ship {
     margin-bottom: 19px;
 
-    @include vp-1366 {
+    @include vp-1023 {
       width: 21px;
       height: 26px;
       margin-top: 5px;
@@ -125,7 +125,7 @@
     margin-top: 5px;
     margin-bottom: 25px;
 
-    @include vp-1366 {
+    @include vp-1023 {
       width: 33px;
       height: 19px;
       margin-top: 9px;
@@ -137,7 +137,7 @@
     margin-top: 8px;
     margin-bottom: 28px;
 
-    @include vp-1366 {
+    @include vp-1023 {
       width: 38px;
       height: 13px;
       margin-top: 12px;
@@ -156,7 +156,7 @@
 }
 
 .advantages__subtitle {
-  @include vp-1366 {
+  @include vp-1023 {
     line-height: 25px;
     margin-bottom: 9px;
   }
@@ -189,7 +189,7 @@
 }
 
 .advantages__separator {
-  @include vp-1366 {
+  @include vp-1023 {
     display: none;
   }
 
@@ -204,7 +204,7 @@
   &--ship {
     display: none;
 
-    @include vp-1366 {
+    @include vp-1023 {
       display: block;
     }
 
@@ -216,13 +216,13 @@
   &--indent {
     display: none;
 
-    @include vp-1366 {
+    @include vp-1023 {
       display: block;
     }
   }
 
   &--mark {
-    @include vp-1366 {
+    @include vp-1023 {
       display: none;
     }
   }
@@ -254,7 +254,7 @@
     padding-right: 59px;
   }
 
-  @include vp-1366 {
+  @include vp-1023 {
     &--ship {
       padding-right: 16px;
     }

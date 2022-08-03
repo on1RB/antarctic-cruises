@@ -64,13 +64,8 @@ form input {
   outline: none;
 
   @include vp-767 {
-    min-width: 230px;
+    min-width: 100%;
   }
-}
-
-input[type="checkbox"]:checked + span::before {
-  background-image: url("/img/svg/form-check.svg");
-  background-repeat: no-repeat;
 }
 
 form span {
@@ -101,10 +96,16 @@ form span {
   }
 }
 
-form p {
+input[type="checkbox"]:checked + span::before {
+  background-image: url("../img/svg/form-check.svg");
+  background-repeat: no-repeat;
+}
+
+form b {
   display: block;
   font-size: 10px;
   line-height: 13px;
+  font-weight: 400;
   color: $color-alice-blue;
   padding-left: 23px;
   padding-top: 7px;

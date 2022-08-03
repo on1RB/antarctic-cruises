@@ -9,7 +9,7 @@
   padding: 35px 25px;
   padding-top: 29px;
 
-  @include vp-1366 {
+  @include vp-1023 {
     padding: 35px;
     padding-top: 29px;
   }
@@ -65,7 +65,7 @@
   margin-top: 10px;
   cursor: pointer;
 
-  @include vp-1366 {
+  @include vp-1023 {
     min-width: 239px;
   }
 

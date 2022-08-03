@@ -1,9 +1,10 @@
 .catalog {
   padding: 110px 118px;
+  padding-right: 88px;
   padding-bottom: 120px;
   background-color: $color-alice-blue;
 
-  @include vp-1366 {
+  @include vp-1023 {
     padding: 90px 60px;
     padding-bottom: 100px;
   }
@@ -23,7 +24,7 @@
   margin: 0;
   margin-bottom: 49px;
 
-  @include vp-1366 {
+  @include vp-1023 {
     font-size: 26px;
     line-height: 39px;
   }
@@ -37,16 +38,18 @@
 
 .catalog__list {
   list-style-type: none;
-  width: 1130px;
+  width: auto;
   margin: 0 auto;
   padding: 0;
-  display: grid;
-  grid-template-columns: 260px 260px 260px 260px;
-  grid-template-rows: 386px 386px;
-  gap: 30px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 
-  @include vp-1366 {
+  @include vp-1023 {
+    display: grid;
     width: 648px;
+    gap: 30px;
     grid-template-columns: 309px 309px;
     grid-template-rows: 386px 386px 386px 386px;
   }
@@ -64,10 +67,17 @@
   padding-top: 337px;
   background: linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, $color-tangaroa 100%);
   background-size: cover;
+  overflow: auto;
+  width: 260px;
+  margin-right: 30px;
+  margin-bottom: 30px;
 
-  @include vp-1366 {
+  @include vp-1023 {
+    width: auto;
     padding: 35px;
     padding-top: 332px;
+    margin-right: 0;
+    margin-bottom: 0;
   }
 
   @include vp-767 {
@@ -151,7 +161,8 @@
   display: none;
 }
 
-.catalog__item:hover .catalog__info {
+.catalog__item:hover .catalog__info,
+.catalog__item:focus .catalog__info {
   display: block;
 }
 

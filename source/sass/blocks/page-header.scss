@@ -13,7 +13,7 @@
     }
   }
 
-  @include vp-1366 {
+  @include vp-1023 {
     padding: 0 45px;
     background-image: url("../img/header-tablet-bg.png");
     filter: drop-shadow(0 0 0);
@@ -38,18 +38,18 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 1160px;
+  width: auto;
   margin: 0 auto;
   justify-content: space-between;
   padding: 35px 0;
 
-  @include vp-1366 {
+  @include vp-1023 {
     width: 678px;
     padding: 22px 0;
   }
 
   @include vp-767 {
-    width: 290px;
+    width: auto;
     padding: 20px 0;
   }
 }
@@ -59,7 +59,7 @@
   width: 70px;
   height: 38px;
 
-  @include vp-1366 {
+  @include vp-1023 {
     margin-top: 8px;
     width: 38px;
     height: 20px;
@@ -87,7 +87,7 @@
   height: 38px;
   fill: $color-alice-blue;
 
-  @include vp-1366 {
+  @include vp-1023 {
     width: 38px;
     height: 20px;
   }
@@ -122,12 +122,12 @@
 }
 
 .page-header__inner {
-  width: 1160px;
+  width: auto;
   margin: 0 auto;
   padding-top: 157px;
   padding-bottom: 286px;
 
-  @include vp-1366 {
+  @include vp-1023 {
     width: 678px;
     padding-top: 184px;
     padding-bottom: 275px;
@@ -150,7 +150,7 @@
   margin-bottom: 12px;
   padding: 0 95px;
 
-  @include vp-1366 {
+  @include vp-1023 {
     padding: 0;
     font-size: 50px;
     line-height: 61px;
@@ -184,7 +184,7 @@
   margin: 0;
   padding: 0 95px;
 
-  @include vp-1366 {
+  @include vp-1023 {
     padding: 0;
     font-size: 18px;
     line-height: 22px;
