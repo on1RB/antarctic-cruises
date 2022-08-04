@@ -8,6 +8,7 @@
   box-shadow: 0 4px 35px rgba(1, 28, 64, 0.15);
   padding: 35px 25px;
   padding-top: 29px;
+  z-index: 1;
 
   @include vp-1023 {
     padding: 35px;
