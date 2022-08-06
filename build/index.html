@@ -10,39 +10,44 @@
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page-body">
-    <header class="page-header">
-      <div class="page-header__wrapper">
-        <a class="page-header__logo">
-          <svg class="page-header__logo-icon" width="70" height="38">
-            <use xlink:href="img/sprite_auto.svg#logo-desktop"></use>
-          </svg>
-        </a>
-        <button class="page-header__toggle page-header__toggle--closed" type="button" tabindex="1">
-          <span class="visually-hidden">Открыть меню.</span>
-        </button>
-        <nav class="main-nav main-nav--nojs">
-          <div class="main-nav__bg"></div>
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a href="#advantages" class="main-nav__link" tabindex="2">Преимущества</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="#directions" class="main-nav__link" tabindex="3">Направления</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="#directions" class="main-nav__link" tabindex="4">Ближайшие круизы</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="#contacts" class="main-nav__link" tabindex="5">Контакты</a>
-            </li>
-          </ul>
-        </nav>
+    <div class="page-body__wrapper">
+      <div class="page-body__inner">
+        <header class="page-header main-nav--nojs">
+          <div class="page-header__container">
+            <nav class="main-nav">
+              <a class="page-header__logo">
+                <svg class="page-header__logo-icon" width="70" height="38">
+                  <use xlink:href="img/sprite_auto.svg#logo-desktop"></use>
+                </svg>
+              </a>
+              <button class="page-header__toggle page-header__toggle--opened" type="button" tabindex="1">
+                <span class="visually-hidden">Открыть меню.</span>
+              </button>
+              <div class="main-nav__bg"></div>
+              <ul class="main-nav__list main-nav__list--nojs">
+                <li class="main-nav__item">
+                  <a href="#advantages" class="main-nav__link" tabindex="2">Преимущества</a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="#directions" class="main-nav__link" tabindex="3">Направления</a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="#directions" class="main-nav__link" tabindex="4">Ближайшие круизы</a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="#contacts" class="main-nav__link" tabindex="5">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+        <div class="page-header__inner">
+          <h1 class="page-header__title">Круизы <br class="page-header__separator"> в Антарктику</h1>
+          <p class="page-header__description">Волшебный мир <br class="page-header__separator"> айсбергов и пингвинов</p>
+        </div>
       </div>
-      <div class="page-header__inner">
-        <h1 class="page-header__title">Круизы <br class="page-header__separator"> в Антарктику</h1>
-        <p class="page-header__description">Волшебный мир <br class="page-header__separator"> айсбергов и пингвинов</p>
-      </div>
-    </header>
+      <div class="page-body__picture"></div>
+    </div>
     <main class="page-main">
       <div class="page-main__wrapper">
         <section class="journey">
