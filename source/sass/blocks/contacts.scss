@@ -9,17 +9,17 @@
 
   @include vp-1023 {
     display: grid;
-    grid-template-columns: 324px 324px;
+    grid-template-columns: repeat(2, 1fr);
     column-gap: 30px;
     padding: 100px 0;
     width: 678px;
   }
 
   @include vp-767 {
-    grid-template-columns: 290px;
+    width: auto;
+    grid-template-columns: 1fr;
     row-gap: 43px;
-    padding: 58px 0;
-    width: 290px;
+    padding: 58px 4.5%;
   }
 }
 
@@ -29,13 +29,14 @@
   margin-right: 100px;
 
   @include vp-1023 {
-    width: 324px;
+    max-width: 324px;
     height: 335px;
     margin-right: 0;
   }
 
   @include vp-767 {
-    width: 290px;
+    width: auto;
+    max-width: 100%;
     height: 316px;
     order: 2;
   }
@@ -50,8 +51,9 @@
   }
 
   @include vp-767 {
-    width: 290px;
-    height: 316px;
+    width: 100%;
+    height: 100%;
+    min-height: 316px;
   }
 }
 

@@ -7,9 +7,11 @@
   padding-top: 112px;
   column-gap: 40px;
   row-gap: 40px;
+  max-width: 1366px;
+  margin: 0 auto;
 
   @include vp-1023 {
-    grid-template-columns: 324px 324px;
+    grid-template-columns: repeat(2, 1fr);
     column-gap: 30px;
     padding-top: 91px;
     padding-left: 45px;
@@ -18,7 +20,7 @@
   }
 
   @include vp-767 {
-    grid-template-columns: 290px;
+    grid-template-columns: 1fr;
     row-gap: 24px;
     padding-top: 57px;
     padding-left: 15px;
@@ -87,14 +89,9 @@
 }
 
 .journey__picture {
-  height: 301px;
+  width: 100%;
 
   @include vp-1023 {
     margin-top: 9px;
-    height: 264px;
-  }
-
-  @include vp-767 {
-    height: 186px;
   }
 }

@@ -754,11 +754,13 @@ video {
 }
 
 .page-header__inner {
-  width: auto;
-  margin: 0 auto;
   padding-top: 192px;
   padding-bottom: 278px;
+  padding-left: 198px;
+  padding-right: 198px;
   color: #f9fbfd;
+  max-width: 1366px;
+  margin: 0 auto;
 }
 
 .page-header__inner h1 {
@@ -768,11 +770,6 @@ video {
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   margin: 0;
   margin-bottom: 12px;
-  padding: 0 198px;
-}
-
-.page-header__separator {
-  display: none;
 }
 
 .page-header__inner p {
@@ -780,7 +777,6 @@ video {
   line-height: 24px;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   margin: 0;
-  padding: 0 198px;
 }
 
 .main-nav {
@@ -791,6 +787,8 @@ video {
   padding-left: 103px;
   padding-right: 103px;
   padding-top: 35px;
+  max-width: 1366px;
+  margin: 0 auto;
 }
 
 .main-nav__bg {
@@ -836,11 +834,6 @@ video {
   background-color: #f9fbfd;
 }
 
-.page-main__wrapper {
-  width: auto;
-  margin: 0 auto;
-}
-
 .page-footer {
   background-color: #011c40;
   padding: 50px 103px;
@@ -859,6 +852,7 @@ video {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  max-width: 1366px;
   margin: 0 auto;
 }
 
@@ -953,6 +947,8 @@ video {
   -moz-column-gap: 40px;
   column-gap: 40px;
   row-gap: 40px;
+  max-width: 1366px;
+  margin: 0 auto;
 }
 
 .journey__wrapper {
@@ -993,7 +989,7 @@ video {
 }
 
 .journey__picture {
-  height: 301px;
+  width: 100%;
 }
 
 .advantages {
@@ -1005,6 +1001,11 @@ video {
   padding-left: 103px;
   padding-right: 103px;
   padding-bottom: 120px;
+}
+
+.advantages__inner {
+  max-width: 1366px;
+  margin: 0 auto;
 }
 
 .advantages h2 {
@@ -1066,6 +1067,7 @@ video {
   color: #011c40;
   margin: 0;
   margin-bottom: 8px;
+  word-break: break-word;
 }
 
 .advantages__indent {
@@ -1093,6 +1095,7 @@ video {
   line-height: 20px;
   color: #011c40;
   margin: 0;
+  word-break: break-word;
 }
 
 .advantages__description--boat {
@@ -1104,6 +1107,8 @@ video {
   padding-right: 88px;
   padding-bottom: 90px;
   background-color: #f9fbfd;
+  max-width: 1366px;
+  margin: 0 auto;
 }
 
 .catalog__title {
@@ -1145,10 +1150,11 @@ video {
   background: -o-linear-gradient(top, rgba(1, 28, 64, 0) 50%, #011c40 100%);
   background: linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, #011c40 100%);
   background-size: cover;
-  overflow: auto;
   width: 260px;
   margin-right: 30px;
   margin-bottom: 30px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .catalog__item--astoria,
@@ -1209,13 +1215,26 @@ video {
   top: 0;
   left: 0;
   width: 100%;
-  min-height: 394px;
+  height: 386px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
   background-color: #011c40;
   -webkit-box-shadow: 0 4px 35px rgba(1, 28, 64, 0.15);
   box-shadow: 0 4px 35px rgba(1, 28, 64, 0.15);
-  padding: 35px 25px;
+  padding: 35px;
+  padding-left: 25px;
+  padding-right: 15px;
   padding-top: 29px;
   z-index: 1;
+  overflow-y: scroll;
+}
+
+.cruise-info::-webkit-scrollbar {
+  width: 10px;
+}
+
+.cruise-info::-webkit-scrollbar-thumb {
+  background-color: #6592c5;
 }
 
 .cruise-info__title {
@@ -1592,9 +1611,10 @@ form button {
   }
 
   .page-header__inner {
-    width: 678px;
     padding-top: 206px;
     padding-bottom: 275px;
+    padding-left: 6%;
+    padding-right: 6%;
   }
 
   .page-header__inner h1 {
@@ -1626,17 +1646,9 @@ form button {
     line-height: 17px;
   }
 
-  .page-main__wrapper {
-    width: 768px;
-  }
-
   .page-footer {
     padding-left: 45px;
     padding-right: 45px;
-  }
-
-  .page-footer__container {
-    width: 678px;
   }
 
   .page-footer__logo {
@@ -1689,8 +1701,8 @@ form button {
   }
 
   .journey {
-    -ms-grid-columns: 324px 324px;
-    grid-template-columns: 324px 324px;
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
     -webkit-column-gap: 30px;
     -moz-column-gap: 30px;
     column-gap: 30px;
@@ -1716,7 +1728,6 @@ form button {
 
   .journey__picture {
     margin-top: 9px;
-    height: 264px;
   }
 
   .advantages {
@@ -1737,8 +1748,6 @@ form button {
   }
 
   .advantages__list {
-    -ms-grid-columns: 206px 206px 206px;
-    grid-template-columns: 206px 206px 206px;
     -webkit-column-gap: 30px;
     -moz-column-gap: 30px;
     column-gap: 30px;
@@ -1822,12 +1831,9 @@ form button {
   .catalog__list {
     display: -ms-grid;
     display: grid;
-    width: 648px;
     gap: 30px;
-    -ms-grid-columns: 309px 309px;
-    grid-template-columns: 309px 309px;
-    -ms-grid-rows: 386px 386px 386px 386px;
-    grid-template-rows: 386px 386px 386px 386px;
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .catalog__item {
@@ -1840,6 +1846,7 @@ form button {
 
   .cruise-info {
     padding: 35px;
+    padding-right: 25px;
     padding-top: 29px;
   }
 
@@ -1883,8 +1890,8 @@ form button {
   .contacts {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 324px 324px;
-    grid-template-columns: 324px 324px;
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
     -webkit-column-gap: 30px;
     -moz-column-gap: 30px;
     column-gap: 30px;
@@ -1893,7 +1900,7 @@ form button {
   }
 
   .contacts__map {
-    width: 324px;
+    max-width: 324px;
     height: 335px;
     margin-right: 0;
   }
@@ -2003,8 +2010,13 @@ form button {
     background-position: 10px 0;
   }
 
+  .page-header__toggle--nojs {
+    display: none;
+  }
+
   .page-header__inner {
-    width: 290px;
+    padding-left: 4.5%;
+    padding-right: 4.5%;
     padding-top: 134px;
     padding-bottom: 179px;
   }
@@ -2019,13 +2031,10 @@ form button {
     margin-bottom: 11px;
   }
 
-  .page-header__separator {
-    display: block;
-  }
-
   .page-header__inner p {
     font-size: 16px;
     line-height: 22px;
+    max-width: 75%;
   }
 
   .main-nav {
@@ -2055,6 +2064,7 @@ form button {
     left: 0;
     top: 0;
     background-color: rgba(0, 43, 102, 0.5);
+    cursor: pointer;
   }
 
   .main-nav__bg--active {
@@ -2077,6 +2087,7 @@ form button {
 
   .main-nav__list--nojs {
     display: block;
+    color: #f9fbfd;
   }
 
   .main-nav__list--active {
@@ -2096,10 +2107,6 @@ form button {
     padding: 10px;
   }
 
-  .page-main__wrapper {
-    width: 320px;
-  }
-
   .page-footer {
     padding: 40px 15px;
     padding-bottom: 32px;
@@ -2110,7 +2117,6 @@ form button {
   }
 
   .page-footer__container {
-    width: 290px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -2161,8 +2167,8 @@ form button {
   }
 
   .journey {
-    -ms-grid-columns: 290px;
-    grid-template-columns: 290px;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
     row-gap: 24px;
     padding-top: 57px;
     padding-left: 15px;
@@ -2184,10 +2190,6 @@ form button {
     display: block;
   }
 
-  .journey__picture {
-    height: 186px;
-  }
-
   .advantages {
     padding-top: 57px;
     padding-left: 15px;
@@ -2207,8 +2209,8 @@ form button {
   }
 
   .advantages__list {
-    -ms-grid-columns: 290px;
-    grid-template-columns: 290px;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
     row-gap: 30px;
   }
 
@@ -2282,11 +2284,9 @@ form button {
   }
 
   .catalog__list {
-    width: 270px;
-    -ms-grid-columns: 270px;
-    grid-template-columns: 270px;
-    -ms-grid-rows: 386px 386px 386px 386px 386px 386px 386px 386px;
-    grid-template-rows: 386px 386px 386px 386px 386px 386px 386px 386px;
+    max-width: 270px;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
   }
 
   .catalog__item {
@@ -2305,7 +2305,7 @@ form button {
 
   .cruise-info {
     padding-left: 25px;
-    padding-right: 25px;
+    padding-right: 15px;
   }
 
   .cruise-info__link {
@@ -2367,6 +2367,7 @@ form button {
 
   form input {
     min-width: 100%;
+    width: 100%;
   }
 
   form span {
@@ -2386,15 +2387,16 @@ form button {
   }
 
   .contacts {
-    -ms-grid-columns: 290px;
-    grid-template-columns: 290px;
+    width: auto;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
     row-gap: 43px;
-    padding: 58px 0;
-    width: 290px;
+    padding: 58px 4.5%;
   }
 
   .contacts__map {
-    width: 290px;
+    width: auto;
+    max-width: 100%;
     height: 316px;
     -webkit-box-ordinal-group: 3;
     -ms-flex-order: 2;
@@ -2402,8 +2404,9 @@ form button {
   }
 
   .contacts__map iframe {
-    width: 290px;
-    height: 316px;
+    width: 100%;
+    height: 100%;
+    min-height: 316px;
   }
 
   .contacts__wrapper {

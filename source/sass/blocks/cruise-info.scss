@@ -3,21 +3,34 @@
   top: 0;
   left: 0;
   width: 100%;
-  min-height: 394px;
+  height: 386px;
+  box-sizing: border-box;
   background-color: $color-tangaroa;
   box-shadow: 0 4px 35px rgba(1, 28, 64, 0.15);
-  padding: 35px 25px;
+  padding: 35px;
+  padding-left: 25px;
+  padding-right: 15px;
   padding-top: 29px;
   z-index: 1;
+  overflow-y: scroll;
+
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #6592c5;
+  }
 
   @include vp-1023 {
     padding: 35px;
+    padding-right: 25px;
     padding-top: 29px;
   }
 
   @include vp-767 {
     padding-left: 25px;
-    padding-right: 25px;
+    padding-right: 15px;
   }
 }
 

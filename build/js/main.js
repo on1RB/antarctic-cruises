@@ -24,6 +24,7 @@ window.addEventListener('DOMContentLoaded', () => {
   navMain.classList.add('main-nav--closed');
   navToggle.classList.remove('page-header__toggle--closed');
   navToggle.classList.add('page-header__toggle--opened');
+  navToggle.classList.remove('page-header__toggle--nojs');
   navList.classList.remove('main-nav__list--nojs');
 
   navToggle.addEventListener('click', () => {
@@ -75,6 +76,9 @@ window.addEventListener('DOMContentLoaded', () => {
       navToggle.classList.add('page-header__toggle--opened');
       pageBody.classList.remove('scroll-lock-ios');
       navLogo.classList.remove('page-header__logo--active');
+      navList.classList.remove('main-nav__list--active');
+      textVisible.classList.remove('page-header__inner--invisible');
+      navOverley.classList.remove('main-nav__bg--active');
     }
   });
 

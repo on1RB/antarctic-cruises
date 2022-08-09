@@ -39,6 +39,11 @@
   }
 }
 
+.advantages__inner {
+  max-width: 1366px;
+  margin: 0 auto;
+}
+
 .advantages h2 {
   font-size: 28px;
   line-height: 42px;
@@ -82,12 +87,11 @@
   column-gap: 40px;
 
   @include vp-1023 {
-    grid-template-columns: 206px 206px 206px;
     column-gap: 30px;
   }
 
   @include vp-767 {
-    grid-template-columns: 290px;
+    grid-template-columns: 1fr;
     row-gap: 30px;
   }
 }
@@ -158,6 +162,7 @@
   color: $color-tangaroa;
   margin: 0;
   margin-bottom: 8px;
+  word-break: break-word;
 
   @include vp-1023 {
     line-height: 25px;
@@ -256,6 +261,7 @@
   line-height: 20px;
   color: $color-tangaroa;
   margin: 0;
+  word-break: break-word;
 }
 
 .advantages__description {
