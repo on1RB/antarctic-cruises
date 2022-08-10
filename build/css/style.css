@@ -812,6 +812,10 @@ video {
   width: auto;
 }
 
+.main-nav__list--nojs a {
+  color: #f9fbfd;
+}
+
 .main-nav__item {
   margin-right: 34px;
 }
@@ -836,36 +840,27 @@ video {
 
 .page-footer {
   background-color: #011c40;
-  padding: 50px 103px;
+  padding: 50px 5.9%;
 }
 
 .page-footer__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr auto;
+  grid-template-columns: 1fr auto;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  max-width: 1366px;
+  max-width: 1160px;
   margin: 0 auto;
 }
 
 .page-footer__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1fr;
+  grid-template-columns: auto 1fr;
+  margin-right: 8%;
 }
 
 .page-footer__logo {
@@ -892,6 +887,8 @@ video {
   flex-direction: row;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -ms-flex-item-align: start;
+  align-self: start;
 }
 
 .page-footer__item {
@@ -919,10 +916,13 @@ video {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   padding-top: 11px;
+  justify-self: end;
+  max-width: 150px;
 }
 
 .social-list__item {
   margin-right: 28px;
+  margin-bottom: 5px;
 }
 
 .social-list__item:last-child {
@@ -1000,7 +1000,7 @@ video {
   padding-top: 110px;
   padding-left: 103px;
   padding-right: 103px;
-  padding-bottom: 120px;
+  padding-bottom: 100px;
 }
 
 .advantages__inner {
@@ -1040,6 +1040,7 @@ video {
   background-color: #f9fbfd;
   padding: 30px;
   padding-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .advantages__icon {
@@ -1292,19 +1293,10 @@ video {
 }
 
 .booking__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  width: auto;
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  max-width: 1040px;
   margin: 0 auto;
 }
 
@@ -1318,13 +1310,14 @@ video {
   flex-direction: column;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  padding-top: 163px;
   margin-bottom: 42px;
-  margin-right: 144px;
+  -ms-flex-item-align: center;
+  align-self: center;
+  padding-top: 44px;
 }
 
 .booking__wrapper {
-  width: 403px;
+  margin-left: 22.5%;
 }
 
 .booking h2 {
@@ -1389,7 +1382,7 @@ form label:nth-child(5) {
 }
 
 form input {
-  min-width: 303px;
+  width: 100%;
   border: none;
   padding: 11px 16px;
   font-family: inherit;
@@ -1448,31 +1441,28 @@ form button {
 }
 
 .contacts {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  -webkit-column-gap: 3.5%;
+  -moz-column-gap: 3.5%;
+  column-gap: 3.5%;
   padding: 120px 103px;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  width: auto;
   margin: 0 auto;
+  max-width: 1366px;
 }
 
 .contacts__map {
-  width: 560px;
   height: 306px;
-  margin-right: 100px;
 }
 
 .contacts__map iframe {
   border: none;
+  width: 100%;
+  height: 100%;
 }
 
 .contacts__wrapper {
@@ -1485,8 +1475,8 @@ form button {
   flex-direction: column;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  width: 500px;
   padding-top: 75px;
+  padding-left: 11%;
 }
 
 .contacts__indent {
@@ -1540,6 +1530,7 @@ form button {
   flex-wrap: wrap;
   line-height: 24px;
   color: #011c40;
+  margin-bottom: 10px;
 }
 
 /* @media (hover: hover), screen and (min-width: 0\0) {
@@ -1572,9 +1563,22 @@ form button {
   }
 }
 
+@media (min-width: 1366px) {
+  .page-footer {
+    padding-left: 103px;
+    padding-right: 103px;
+  }
+}
+
 @media (max-width: 1439px) {
   .container {
     padding: 0 32px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .booking__wrapper {
+    margin-left: 5%;
   }
 }
 
@@ -1644,11 +1648,6 @@ form button {
   .main-nav__link {
     font-size: 14px;
     line-height: 17px;
-  }
-
-  .page-footer {
-    padding-left: 45px;
-    padding-right: 45px;
   }
 
   .page-footer__logo {
@@ -1734,7 +1733,7 @@ form button {
     padding-top: 90px;
     padding-left: 45px;
     padding-right: 45px;
-    padding-bottom: 100px;
+    padding-bottom: 80px;
     background-image: url("../img/advantages-tablet-bg.png");
   }
 
@@ -1818,7 +1817,7 @@ form button {
   }
 
   .catalog {
-    padding: 90px 60px;
+    padding: 90px 7.8%;
     padding-bottom: 100px;
   }
 
@@ -1829,16 +1828,17 @@ form button {
   }
 
   .catalog__list {
+    width: 648px;
     display: -ms-grid;
     display: grid;
     gap: 30px;
-    -ms-grid-columns: (1fr)[2];
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(309px, 1fr));
   }
 
   .catalog__item {
     width: auto;
     padding: 35px;
+    padding-bottom: 27px;
     padding-top: 332px;
     margin-right: 0;
     margin-bottom: 0;
@@ -1867,11 +1867,13 @@ form button {
 
   .booking__inner {
     padding-top: 0;
+    padding-left: 0;
     margin-right: 0;
   }
 
   .booking__wrapper {
     margin: 0 auto;
+    width: 403px;
   }
 
   .booking h2 {
@@ -1895,24 +1897,22 @@ form button {
     -webkit-column-gap: 30px;
     -moz-column-gap: 30px;
     column-gap: 30px;
-    padding: 100px 0;
-    width: 678px;
+    padding: 100px 5.9%;
   }
 
   .contacts__map {
-    max-width: 324px;
     height: 335px;
     margin-right: 0;
   }
 
   .contacts__map iframe {
-    width: 324px;
     height: 335px;
   }
 
   .contacts__wrapper {
     width: auto;
     padding-top: 66px;
+    padding-left: 0;
   }
 
   .contacts__indent {
@@ -2117,17 +2117,13 @@ form button {
   }
 
   .page-footer__container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
   }
 
   .page-footer__wrapper {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
   }
 
   .page-footer__logo {
@@ -2164,6 +2160,8 @@ form button {
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
+    -ms-grid-column-align: auto;
+    justify-self: auto;
   }
 
   .journey {
@@ -2194,7 +2192,7 @@ form button {
     padding-top: 57px;
     padding-left: 15px;
     padding-right: 15px;
-    padding-bottom: 65px;
+    padding-bottom: 42px;
     background-image: url("../img/advantages-mobile-bg.png");
   }
 
@@ -2291,6 +2289,7 @@ form button {
 
   .catalog__item {
     padding: 25px;
+    padding-bottom: 17px;
     padding-top: 342px;
   }
 
@@ -2367,7 +2366,6 @@ form button {
 
   form input {
     min-width: 100%;
-    width: 100%;
   }
 
   form span {
@@ -2390,8 +2388,9 @@ form button {
     width: auto;
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
-    row-gap: 43px;
+    row-gap: 38px;
     padding: 58px 4.5%;
+    padding-bottom: 53px;
   }
 
   .contacts__map {
@@ -2404,7 +2403,6 @@ form button {
   }
 
   .contacts__map iframe {
-    width: 100%;
     height: 100%;
     min-height: 316px;
   }

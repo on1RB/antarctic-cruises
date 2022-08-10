@@ -64,6 +64,9 @@ window.addEventListener('DOMContentLoaded', () => {
         navToggle.classList.add('page-header__toggle--opened');
         pageBody.classList.remove('scroll-lock-ios');
         navLogo.classList.remove('page-header__logo--active');
+        navList.classList.remove('main-nav__list--active');
+        textVisible.classList.remove('page-header__inner--invisible');
+        navOverley.classList.remove('main-nav__bg--active');
       }
     });
   });

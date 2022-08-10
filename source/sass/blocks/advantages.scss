@@ -6,7 +6,7 @@
   padding-top: 110px;
   padding-left: 103px;
   padding-right: 103px;
-  padding-bottom: 120px;
+  padding-bottom: 100px;
 
   @media (min-width: 1024px) {
     @include retina {
@@ -18,7 +18,7 @@
     padding-top: 90px;
     padding-left: 45px;
     padding-right: 45px;
-    padding-bottom: 100px;
+    padding-bottom: 80px;
     background-image: url("../img/advantages-tablet-bg.png");
 
     @include retina {
@@ -30,7 +30,7 @@
     padding-top: 57px;
     padding-left: 15px;
     padding-right: 15px;
-    padding-bottom: 65px;
+    padding-bottom: 42px;
     background-image: url("../img/advantages-mobile-bg.png");
 
     @include retina {
@@ -100,6 +100,7 @@
   background-color: $color-alice-blue;
   padding: 30px;
   padding-bottom: 25px;
+  margin-bottom: 20px;
 
   @include vp-1023 {
     padding: 20px;

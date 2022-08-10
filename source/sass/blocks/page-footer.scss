@@ -1,10 +1,10 @@
 .page-footer {
   background-color: $color-tangaroa;
-  padding: 50px 103px;
+  padding: 50px 5.9%;
 
-  @include vp-1023 {
-    padding-left: 45px;
-    padding-right: 45px;
+  @media (min-width: 1366px) {
+    padding-left: 103px;
+    padding-right: 103px;
   }
 
   @include vp-767 {
@@ -15,30 +15,24 @@
 }
 
 .page-footer__container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr auto;
   justify-content: space-between;
-  max-width: 1366px;
+  max-width: 1160px;
   margin: 0 auto;
 
-  @include vp-1023 {
-    // width: 678px;
-  }
-
   @include vp-767 {
-    // width: 290px;
-    flex-direction: column;
+    grid-template-columns: 1fr;
   }
 }
 
 .page-footer__wrapper {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  margin-right: 8%;
 
   @include vp-767 {
-    flex-direction: column;
+    grid-template-columns: 1fr;
   }
 }
 
@@ -83,6 +77,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  align-self: start;
 
   @include vp-767 {
     flex-direction: column;
